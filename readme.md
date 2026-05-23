@@ -6,11 +6,11 @@ Este proyecto es una plataforma interactiva de analítica de datos diseñada par
 
 ## :bar_chart: Características Principales
 
-* ** :earth_americas: Cobertura Nacional Completa:** Catálogo de municipios distribuido por departamentos con coordenadas geográficas reales (Latitud y Longitud) almacenadas de forma nativa.
-* ** :arrows_clockwise: Sincronización en Tiempo Real:** Conexión directa con la API de la NASA para la extracción de series temporales diarias de variables meteorológicas críticas.
-* ** :shield: Depuración Automática de Datos:** Filtro algorítmico integrado que detecta, aísla y descarta códigos de error de transmisión (valores negativos o `-999`), garantizando promedios limpios y realistas.
-* ** :chart_with_upwards_trend: Visualización Interactiva:** Enfoque cartográfico dinámico mediante mapas interactivos y renderizado de gráficos lineales de evolución histórica con soporte cross-platform.
-* ** :clipboard: Dictamen Técnico Automatizado:** Módulo algorítmico que evalúa el promedio de irradiancia capturado y genera un reporte de viabilidad detallado (Alta, Moderada o Condicionada) según el recurso disponible.
+* :earth_americas: **Cobertura Nacional Completa:** Catálogo de municipios distribuido por departamentos con coordenadas geográficas reales (Latitud y Longitud) almacenadas de forma nativa.
+* :arrows_clockwise: **Sincronización en Tiempo Real:** Conexión directa con la API de la NASA para la extracción de series temporales diarias de variables meteorológicas críticas.
+* :shield: **Depuración Automática de Datos:** Filtro algorítmico integrado que detecta, aísla y descarta códigos de error de transmisión (valores negativos o `-999`), garantizando promedios limpios y realistas.
+* :chart_with_upwards_trend: **Visualización Interactiva:** Enfoque cartográfico dinámico mediante mapas interactivos y renderizado de gráficos lineales de evolución histórica con soporte cross-platform.
+* :clipboard: **Dictamen Técnico Automatizado:** Módulo algorítmico que evalúa el promedio de irradiancia capturado y genera un reporte de viabilidad detallado (Alta, Moderada o Condicionada) según el recurso disponible.
 
 ---
 
@@ -58,7 +58,7 @@ DB_PORT=5432
 DB_NAME=postgres
 ```
 
-### 3. 3. Poblar la Base de Datos con Cobertura Nacional
+### 3. Poblar la Base de Datos con Cobertura Nacional
 Antes de lanzar la interfaz, ejecuta el script de migración masiva local para limpiar e inyectar el catálogo robusto de municipios y departamentos georreferenciados:
 
 ```bash
