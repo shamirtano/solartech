@@ -7,9 +7,13 @@ Este proyecto es una plataforma interactiva de analítica de datos diseñada par
 ## :bar_chart: Características Principales
 
 * :earth_americas: **Cobertura Nacional Completa:** Catálogo de municipios distribuido por departamentos con coordenadas geográficas reales (Latitud y Longitud) almacenadas de forma nativa.
+  
 * :arrows_clockwise: **Sincronización en Tiempo Real:** Conexión directa con la API de la NASA para la extracción de series temporales diarias de variables meteorológicas críticas.
+  
 * :shield: **Depuración Automática de Datos:** Filtro algorítmico integrado que detecta, aísla y descarta códigos de error de transmisión (valores negativos o `-999`), garantizando promedios limpios y realistas.
+  
 * :chart_with_upwards_trend: **Visualización Interactiva:** Enfoque cartográfico dinámico mediante mapas interactivos y renderizado de gráficos lineales de evolución histórica con soporte cross-platform.
+  
 * :clipboard: **Dictamen Técnico Automatizado:** Módulo algorítmico que evalúa el promedio de irradiancia capturado y genera un reporte de viabilidad detallado (Alta, Moderada o Condicionada) según el recurso disponible.
 
 ---
@@ -47,7 +51,7 @@ Asegúrate de contar con Python 3.10 o superior instalado. Abre la terminal en e
 pip install streamlit pandas requests emoji sqlalchemy psycopg2-binary python-dotenv numpy
 ```
 
-### 2. Configurar Variables de Entorno2.
+### 2. Configurar Variables de Entorno.
 Crea un archivo llamado .env en la raíz del proyecto para almacenar de forma segura las credenciales de conexión a tu clúster de Supabase:
 
 ```bash
@@ -103,3 +107,7 @@ Para publicar el proyecto de forma pública y gratuita, sigue estos pasos:
     DB_NAME = "postgres"
     ```
 6. Haz clic en "Deploy!" y en un par de minutos tu plataforma de Inteligencia Solar estará operativa a nivel mundial.
+
+### Autores:
+
+* :octocat: [Shamir Tano Morales](https://github.com/shamirtano)
