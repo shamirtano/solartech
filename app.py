@@ -13,14 +13,25 @@ from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import URL
 
+# Cargamos secrets desde TOML
+def get_secret(key: str, default=None):
+    return st.secrets.get(key, os.getenv(key, default))
+
+# Creamos la conexión con las credenciales desde TOML:
+url_conexion = URL.create(
+    drivername="postgresql+psycopg2",
+    username=get_secret("DB_USER"),
+    password=get_secret("DB_PASSWORD"),
+    host=get_secret("DB_HOST"),
+    port=int(get_secret("DB_PORT", 5432)),
+    database=get_secret("DB_NAME"),
+)
 
 st.set_page_config(
     page_title="Solar Intelligence - NASA POWER",
     page_icon=emoji.emojize(":sun:"),
     layout="wide",
 )
-
-load_dotenv()
 
 NASA_BACKGROUND_URL = (
     "https://images-assets.nasa.gov/image/iss065e066456/"
