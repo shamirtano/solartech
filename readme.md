@@ -111,7 +111,7 @@ Para publicar el proyecto de forma pública y gratuita, sigue estos pasos:
 ### Autores:
 
 * :octocat: [Shamir Tano Morales](https://github.com/shamirtano)
-* :octocat: [Diana Garcia](https://github.com/digarciatkd)
+* :octocat: [Diana Garcia Quintero](https://github.com/digarciatkd)
 * :octocat: [Sebastián Agudelo Herrera](https://github.com/sebastianagudelo)
 
 Para el programa de **Análisis de Datos - Nivel Intermedio** del programa TalentoTech del Ministerio de las TIC y La Universidad de Antioquia
