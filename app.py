@@ -1123,6 +1123,17 @@ with TAB_EXPLORADOR:
     # ── Sub-tab: Proyectos UPME ─────────────────────────────────────────────
     with sub_proyectos:
         st.subheader("Proyectos UPME cargados en la base de datos")
+        st.markdown(
+            """
+            <div class="insight-card">
+                <div class="ins-label">Guía rápida de filtros</div>
+                <p><strong>Estado / fase:</strong> <strong>Fase 1</strong> corresponde a la inscripción inicial del proyecto; <strong>Fase 2</strong> indica que ya existe avance regulatorio o técnico, pero todavía no está listo para operar; <strong>Fase 3</strong> agrupa los proyectos más avanzados, cercanos a la entrada en operación.</p>
+                <p><strong>Recurso:</strong> clasifica la fuente principal del proyecto, por ejemplo <strong>SOLAR</strong>, eólico u otras tecnologías registradas en UPME.</p>
+                <p><strong>Departamento:</strong> limita la vista a la ubicación geográfica del proyecto. Con los filtros combinados puedes aislar un territorio, una fase y un tipo de recurso para revisar la cartera con más precisión.</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
         with st.spinner("Consultando proyectos UPME...", show_time=True):
             df_proy = cargar_proyectos_upme()
         tiene_datos = not df_proy.empty
