@@ -977,10 +977,9 @@ st.markdown(
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # PESTAÑAS PRINCIPALES
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-TAB_EXPLORADOR, TAB_BRECHA, TAB_ANEXO = st.tabs([
+TAB_EXPLORADOR, TAB_BRECHA = st.tabs([
     "Explorador Solar Nacional",
     "Análisis de Brecha",
-    "Anexo Técnico",
 ])
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -1561,44 +1560,3 @@ with TAB_BRECHA:
             *Fuentes: NASA POWER API (2024–2026) · UPME Registro de Proyectos (corte marzo 2026)*
             *Herramientas: Python · pandas · NumPy · SQLite · Plotly · Streamlit · Scikit-learn*
             """)
-
-
-# ════════════════════════════════════════════════════════════════════════════
-# TAB 3 — ANEXO TÉCNICO
-# ════════════════════════════════════════════════════════════════════════════
-with TAB_ANEXO:
-    st.markdown(
-        "Figuras estáticas generadas con Matplotlib para el informe académico."
-    )
-
-    fig01_path = FIG_DIR / "fig01_distribuciones_region.png"
-    fig06_path = FIG_DIR / "fig06_correlacion_nasa.png"
-
-    st.markdown('<p class="section-label">Figura 1 — Distribución de irradiancia por región natural</p>',
-                unsafe_allow_html=True)
-    if fig01_path.exists():
-        st.image(str(fig01_path), use_container_width=True)
-    else:
-        st.warning(f"Figura no encontrada en `docs/figuras/fig01_distribuciones_region.png`. "
-                   "Ejecuta el script de generación de figuras primero.")
-
-    st.divider()
-
-    st.markdown('<p class="section-label">Figura 6 — Matriz de correlación de Pearson (variables NASA)</p>',
-                unsafe_allow_html=True)
-    if fig06_path.exists():
-        st.image(str(fig06_path), use_container_width=True)
-    else:
-        st.warning("Figura no encontrada en `docs/figuras/fig06_correlacion_nasa.png`. "
-                   "Ejecuta el script de generación de figuras primero.")
-
-    st.markdown(
-        """
-        <br>
-        <small style="color:#8fd4ff;">
-        Fuente: NASA POWER — mediciones diarias 2024-01-01 al 2026-05-09 (860 días) ·
-        88 municipios · 63 píxeles únicos de la grilla satelital (0.5° × 0.5°)
-        </small>
-        """,
-        unsafe_allow_html=True,
-    )
