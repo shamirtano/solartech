@@ -1189,7 +1189,8 @@ with TAB_EXPLORADOR:
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
             use_container_width=True,
         )
-        archivo_upme = st.file_uploader("Archivo UPME en formato XLSX", type=["xlsx"])
+        st.markdown("**Subir archivo UPME en formato XLSX**")
+        archivo_upme = st.file_uploader("Examinar archivo", type=["xlsx"])
         if archivo_upme is not None:
             try:
                 with st.spinner("Validando estructura UPME...", show_time=True):
@@ -1568,9 +1569,7 @@ with TAB_BRECHA:
 # ════════════════════════════════════════════════════════════════════════════
 with TAB_ANEXO:
     st.markdown(
-        "Figuras estáticas generadas con Matplotlib para el informe académico. "
-        "Para regenerarlas, ejecuta `python scripts/generar_figuras_dashboard.py` "
-        "desde la raíz del proyecto."
+        "Figuras estáticas generadas con Matplotlib para el informe académico."
     )
 
     fig01_path = FIG_DIR / "fig01_distribuciones_region.png"
