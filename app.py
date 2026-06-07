@@ -141,7 +141,7 @@ def aplicar_estilos():
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            color: #f5f7fb;
+            color: #000;
         }}
         .stApp, .stApp p, .stApp span, .stApp label, .stApp div, .stApp li,
         .stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp h5, .stApp h6,
