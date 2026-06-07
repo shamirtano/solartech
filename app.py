@@ -230,13 +230,34 @@ def aplicar_estilos():
         [data-baseweb="input"] input, [data-testid="stDateInput"] input {{ color: #081627; }}
         [data-baseweb="popover"] *, [role="listbox"] *, [role="option"] {{ color: #081627; }}
         [role="option"]:hover {{ background: rgba(255,209,102,0.24); color: #081627; }}
-        .stButton > button, .stDownloadButton > button,
+        .stButton > button,
+        .stButton > button[kind="primary"],
+        .stDownloadButton > button,
         [data-testid="stFileUploaderDropzone"] {{
-            background: rgba(255,255,255,0.92); color: #081627;
-            border: 1px solid rgba(143,212,255,0.7); border-radius: 8px;
+            background: rgba(255,255,255,0.92);
+            color: #081627 !important;
+            border: 1px solid rgba(143,212,255,0.7);
+            border-radius: 8px;
         }}
-        .stButton > button:hover, .stDownloadButton > button:hover {{
-            background: #ffd166; color: #081627; border-color: #ffd166;
+        .stButton > button *,
+        .stButton > button[kind="primary"] *,
+        .stDownloadButton > button *,
+        .stButton > button [data-testid="stMarkdownContainer"],
+        .stButton > button[kind="primary"] [data-testid="stMarkdownContainer"],
+        .stDownloadButton > button [data-testid="stMarkdownContainer"] {{
+            color: #081627 !important;
+        }}
+        .stButton > button:hover,
+        .stButton > button[kind="primary"]:hover,
+        .stDownloadButton > button:hover {{
+            background: #ffd166;
+            color: #081627 !important;
+            border-color: #ffd166;
+        }}
+        .stButton > button:hover *,
+        .stButton > button[kind="primary"]:hover *,
+        .stDownloadButton > button:hover * {{
+            color: #081627 !important;
         }}
         [data-testid="stDataFrame"] {{
             background: rgba(255,255,255,0.96); border-radius: 8px; padding: 0.25rem;
