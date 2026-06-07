@@ -1189,8 +1189,7 @@ with TAB_EXPLORADOR:
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
             use_container_width=True,
         )
-        st.markdown("<p>Examinar archivo XLSX</p>", unsafe_allow_html=True)
-        archivo_upme = st.file_uploader("", type=["xlsx"]   , label_visibility="collapsed")
+        archivo_upme = st.file_uploader("Examinar archivo XLSX", type=["xlsx"], use_container_width=True)
         if archivo_upme is not None:
             try:
                 with st.spinner("Validando estructura UPME...", show_time=True):
