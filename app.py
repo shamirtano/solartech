@@ -992,7 +992,7 @@ with TAB_EXPLORADOR:
         default=list(MAPEO_VARIABLES.keys())[:2],
     )
     st.sidebar.markdown("---")
-    btn_sincronizar = st.sidebar.button("Sincronizar y analizar", use_container_width=True)
+    btn_sincronizar = st.sidebar.button("Sincronizar y analizar", use_container_width=True, type="primary")
 
     # ── Sub-pestañas del explorador ─────────────────────────────────────────
     sub_analisis, sub_proyectos, sub_upme = st.tabs([
