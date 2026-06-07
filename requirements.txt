@@ -1,9 +1,29 @@
-streamlit
-pandas
-numpy
-requests
-python-dotenv
-SQLAlchemy
-psycopg2-binary
-openpyxl
-emoji
+# SolarTech Colombia — Dependencias
+# Instalar con: pip install -r requirements.txt
+
+# Core Streamlit
+streamlit>=1.35.0
+
+# Base de datos y ORM
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+pandas>=2.0
+openpyxl>=3.1
+
+# NASA POWER + HTTP
+requests>=2.31
+
+# Variables de entorno
+python-dotenv>=1.0
+
+# Visualizaciones interactivas (Tab 2)
+plotly>=5.20
+numpy>=1.24
+
+# Visualizaciones estáticas (Anexo / script de generación)
+matplotlib>=3.7
+seaborn>=0.13
+scipy>=1.11
+
+# Emojis
+emoji>=2.8
