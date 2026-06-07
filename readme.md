@@ -111,3 +111,4 @@ Para publicar el proyecto de forma pública y gratuita, sigue estos pasos:
 ### Autores:
 
 * :octocat: [Shamir Tano Morales](https://github.com/shamirtano)
+* :octocat: [Diana Garcia](https://github.com/digarciatkd)
